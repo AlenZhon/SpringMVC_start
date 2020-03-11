@@ -15,10 +15,11 @@
 
     <!-- 视图解析器对象 -->
     <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="WEB-INF/pages/"/>
+        <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>
 
     </bean>
+    <!-- 自定义类型转换器-->
 
     <!-- 开启SpringMVC注解支持-->
     <mvc:annotation-driven/>
